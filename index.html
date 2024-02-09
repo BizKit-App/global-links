@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Global Links & Consultants</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="./css/vendor/spectre.min.css">
+	<link rel="stylesheet" href="./css/vendor/spectre-exp.min.css">
+	<link rel="stylesheet" href="./css/vendor/spectre-icons.min.css">
+	<style>
+	 @font-face {
+	     font-family: 'Anton-Regular';
+	     src: URL('fonts/Anton-Regular.ttf') format('truetype');
+	 }
+
+	 #LOGO{
+	     width: 180px;
+	 }
+	 .navbar{
+	     background-color: #386988;
+	     border-bottom: thick solid #386988;
+	 }
+	 .navbar-section a{
+	     color: #FFFFFF !important;
+	 }
+
+	 #COVER{
+	     background-image: url("img/cover.jpg");
+	     height: 95vh;
+	     background-attachment: fixed;
+	     background-size: 100% 100%;
+	     padding: 6em 4em;
+	 }
+
+	 #COVER h2{
+	     color: #FFFFFF;
+	     font-size: 5em;
+	     font-family: 'Anton-Regular';
+	     text-shadow: 1px 1px 1px #386988;
+	 }
+
+	 #COVER h4{
+	     color: #FFFFFF;
+	     text-shadow: 1px 1px 1px #386988;
+	 }
+
+	 .sectionHeads{
+	     font-family: 'Anton-Regular';
+	     font-size: 3em;
+	 }
+
+	 .sections{
+	     padding: 4em;
+	 }
+
+	 .sections p{
+	     font-size: 2em;
+	 }
+
+	 #VALUES{
+	     background-color: #386988;
+	     color: #FFFFFF;
+	 }
+
+	 #VALUES li{
+	     font-size: 2em;
+	 }
+
+	 .services-icons{
+	     width: 100px;
+	 }
+	 .card-header{
+	     font-family: 'Anton-Regular';
+	 }
+
+	 #CONTACT{
+	     background-color: #386988;
+	     color: #386988;
+	     background-image: url("img/bg.jpg");
+	     background-size: 100% 100%;
+	     text-shadow: 1px 1px 1px #FFFFFF;
+	 }
+	 
+	 #CONTACT li{
+	     font-size: 1.5em;
+	     list-style: none;
+	 }
+
+	 #CONTACT .btn{
+	     background-color: #386988;
+	     border-color: #FFFFFF;
+	 }
+
+
+	 #MOBILE_NAV{
+	     display: none;
+	 }
+
+	 @media only screen and (max-width: 1300px){
+	     #DESTOP_NAV{
+		 display: none !important;
+		 background-color: display none;
+	     }
+
+	     #MOBILE_NAV{
+		 display: block;
+		 padding-bottom: 0em;
+	     }
+
+	     #MOBILE_NAV #LOGO{
+		 margin: 0 auto;
+		 width: 150px;
+		 position: relative;
+		 bottom: 1em;
+	     }
+
+	     #MOBILE_NAV a{
+		 color: #386988;
+	     }
+	     .dropdown-toggle{
+		 font-size: 1.5em;
+		 color: #FFFFFF !important;
+	     }
+	     
+	     #COVER{
+		 background-image: url("img/cover.jpg");
+		 height: 30vh;
+		 background-attachment: scroll;
+		 background-size: 100%;
+		 background-repeat: no-repeat;
+		 padding: 2em;
+		 padding-bottom: 0;
+		 margin-bottom: 0;
+	     }
+	     #COVER h2{
+		 display: none;
+	     }
+
+	     #COVER h4{
+		 font-size: 2em;
+		 font-family: 'Anton-Regular';
+	     }
+
+	     .sectionHeads{
+		 font-family: 'Anton-Regular';
+		 font-size: 2em;
+	     }
+
+	     .sections{
+		 padding: 1em 2em;
+	     }
+
+	     .sections p{
+		 font-size: 1em;
+	     }
+
+	     #VALUES li{
+		 font-size: 1em;
+	     }
+
+	     #CONTACT{
+		 background-color: #386988;
+		 color: #386988;
+		 background-image: url("img/bg.jpg");
+		 background-size: 100% 100%;
+		 text-shadow: 1px 1px 1px #FFFFFF;
+	     }
+
+	</style>
+    </head>
+    <body>
+	<header class="navbar" id="DESTOP_NAV">
+	    <section class="navbar-section">
+		<a href="#VISION" class="btn btn-link">Vision</a>
+		<a href="#MISSION" class="btn btn-link">Mission</a>
+		<a href="#VALUES" class="btn btn-link">Values</a>
+	    </section>
+	    <section class="navbar-center">
+		<img src="./img/logo.png" id="LOGO">
+	    </section>
+	    <section class="navbar-section">
+		<a href="#SERVICES" class="btn btn-link">Services</a>
+		<a href="#CONTACT" class="btn btn-link">Contact</a>
+	    </section>
+	</header>
+	<header class="navbar" id="MOBILE_NAV">
+	    <div class="dropdown">
+		<a href="#" class="btn btn-link dropdown-toggle" tabindex="0">
+		    <i class="icon icon-menu"></i>
+		</a>
+		<ul class="menu">
+		    <li><a href="#VISION" class="btn btn-link">Vision</a></li>
+		    <li><a href="#MISSION" class="btn btn-link">Mission</a></li>
+		    <li><a href="#VALUES" class="btn btn-link">Values</a></li>
+		    <li><a href="#SERVICES" class="btn btn-link">Services</a></li>
+		    <li><a href="#CONTACT" class="btn btn-link">Contact</a></li>
+		</ul>
+	    </div>
+	    <section class="navbar-center">
+		<img src="./img/logo.png" id="LOGO">
+	    </section>
+	</header>
+	<section id="COVER">
+	    <h2>Global Links & Consultants</h2>
+	    <h4>KNOWLEDGE IS OUR PASSION</h4>
+	</section>
+	<section class="sections" id="VISION">
+	    <h2 class="sectionHeads">Vision</h2>
+	    <p>
+		We aspire to become transformative agents of Namibia's
+		economic landscape.
+	    </p>
+	</section>
+	<section class="sections" id="MISSION">
+	    <h2 class="sectionHeads">MISSION</h2>
+	    <p>
+		To facilitate human capital development through
+		the exploration and exploitation of innovative
+		multi-perspective knowledge solutions in the new
+		economy powered by information and knowledge and
+		enabled by ICT. We enhance the skills and knowledge
+		of individuals, organisations and communities in a
+		manner that sustains operations.
+	    </p>
+	</section>
+	<section class="sections" id="VALUES">
+	    <h2 class="sectionHeads">OUR VALUES</h2>
+	    <ul>
+		<li>Our Relationships</li>
+		<li>Our Clients</li>
+		<li>Excellence</li>
+		<li>Innovation</li>
+		<li>Growth</li>
+	    </ul>
+	</section>
+	<section class="sections" id="SERVICES">
+	    <h2 class="sectionHeads">OUR SERVICES</h2>
+	    <div class="container">
+		<div class="columns">
+		    <div class="card col-3 col-sm-12 text-center">
+			<div class="card-image col-mx-auto">
+			    <img src="img/research.png" class="img-responsive services-icons">
+			</div>
+			<div class="card-header">
+			    <div class="card-title h5">Researching</div>
+			</div>
+		    </div>
+		    <div class="card col-3 col-sm-12 text-center">
+			<div class="card-image col-mx-auto">
+			    <img src="img/knowledge.png" class="img-responsive services-icons">
+			</div>
+			<div class="card-header">
+			    <div class="card-title h5">Managing Knowledge</div>
+			</div>
+		    </div>
+		    <div class="card col-3 col-sm-12 text-center">
+			<div class="card-image col-mx-auto">
+			    <img src="img/technology.png" class="img-responsive services-icons">
+			</div>
+			<div class="card-header">
+			    <div class="card-title h5">Creating New Fields</div>
+			</div>
+		    </div>
+		    <div class="card col-3 col-sm-12 text-center">
+			<div class="card-image col-mx-auto">
+			    <img src="img/speedometer.png" class="img-responsive services-icons">
+			</div>
+			<div class="card-header">
+			    <div class="card-title h5">Enhancing Productivity</div>
+			</div>
+		    </div>
+		</div>
+		<br>
+		<div class="columns">
+		    <div class="card col-3 col-sm-12 text-center">
+			<div class="card-image col-mx-auto">
+			    <img src="img/training.png" class="img-responsive services-icons">
+			</div>
+			<div class="card-header">
+			    <div class="card-title h5">Training, consulting, coaching & mentoring</div>
+			</div>
+		    </div>
+		    <div class="card col-3 col-sm-12 text-center">
+			<div class="card-image col-mx-auto">
+			    <img src="img/culture.png" class="img-responsive services-icons">
+			</div>
+			<div class="card-header">
+			    <div class="card-title h5">Developing Organisation</div>
+			</div>
+		    </div>
+		    <div class="card col-3 col-sm-12 text-center">
+			<div class="card-image col-mx-auto">
+			    <img src="img/financial-advisor.png" class="img-responsive services-icons">
+			</div>
+			<div class="card-header">
+			    <div class="card-title h5">Conducting Financial Analysis & Planning</div>
+			</div>
+		    </div>
+		    <div class="card col-3 col-sm-12 text-center">
+			<div class="card-image col-mx-auto">
+			    <img src="img/financial.png" class="img-responsive services-icons">
+			</div>
+			<div class="card-header">
+			    <div class="card-title h5">Performing Financial Forecasting</div>
+			</div>
+		    </div>
+		</div>
+		<br><br>
+		<div class="columns">
+		    <div class="card col-3 col-sm-12 col-mx-auto text-center">
+			<div class="card-image col-mx-auto">
+			    <img src="img/evaluation.png" class="img-responsive services-icons">
+			</div>
+			<div class="card-header">
+			    <div class="card-title h5">Assesing Business Risk</div>
+			</div>
+		    </div>
+		    <div class="card col-3 col-sm-12 col-mx-auto text-center">
+			<div class="card-image col-mx-auto">
+			    <img src="img/strategy.png" class="img-responsive services-icons">
+			</div>
+			<div class="card-header">
+			    <div class="card-title h5">Guiding Business Strategy</div>
+			</div>
+		    </div>
+		    <div class="card col-3 col-sm-12 text-center">
+			<div class="card-image col-mx-auto">
+			    <img src="img/publishing.png" class="img-responsive services-icons">
+			</div>
+			<div class="card-header">
+			    <div class="card-title h5">Writing & Publishing</div>
+			</div>
+		    </div>
+		    <div class="card col-3 col-sm-12 text-center">
+			<div class="card-image">
+			    <img src="img/logo.png" class="img-responsive services-icons">
+			</div>
+			<div class="card-header">
+			    <div class="card-title h5">And much more...</div>
+			</div>
+		    </div>
+		</div>
+	    </div>
+	    <br><br>
+	    <h3 class="text-center">
+		Radically rethinking and reinventing work design for
+		the future
+	    </h3>
+	</section>
+	<section class="sections" id="CONTACT">
+	    <h2 class="sectionHeads">CONTACT US</h2>
+	    <div class="columns">
+		<div class="form-group col-6 col-sm-12">
+		    <label class="form-label" for="input-example-1">Name</label>
+		    <input class="form-input" type="text" id="input-example-1" placeholder="Name">
+
+		    <label class="form-label" for="input-example-1">Email Address</label>
+		    <input class="form-input" type="text" id="input-example-1" placeholder="Email Address">
+
+		    
+		    <label class="form-label" for="input-example-3">Message</label>
+		    <textarea class="form-input" id="input-example-3" placeholder="Message" rows="3"></textarea>
+		    <br>
+		    <button class="btn btn-primary btn-lg">Send Message</button>
+		</div>
+	    </div>
+	    <br>
+	    <br>
+	    <ul>
+		<li><i class="icon icon-apps"></i> +264 81 30 0437</li>
+		<li><i class="icon icon-mail"></i> P.O. Box 86937, Windhoek Namibia</li>
+		<li><i class="icon icon-message"></i> glinks232@gmail.com</li>
+	    </ul>
+	</section>
+	<script src="index.js"></script>
+    </body>
+</html>

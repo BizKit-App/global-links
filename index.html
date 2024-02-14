@@ -21,11 +21,23 @@
 	 .navbar{
 	     background-color: #386988;
 	     border-bottom: thick solid #386988;
+	     padding: .5em;
 	 }
 	 .navbar-section a{
 	     color: #FFFFFF !important;
 	 }
 
+	 .writingSkillsBtn{
+	     background-color: #386988;
+	     color: #FFFFFF;
+	     border-color: #FFFFFF;
+	 }
+
+	 .writingSkillsBtn:hover, .writingSkillsBtn:active, .writingSkillsBtn:focus{
+	     color: #386988;
+	     border-color: #386988;
+	 }
+	 
 	 #COVER{
 	     background-image: url("img/cover.jpg");
 	     height: 95vh;
@@ -98,35 +110,11 @@
 	     display: none;
 	 }
 
-	 @media only screen and (max-width: 1300px){
-	     #DESTOP_NAV{
-		 display: none !important;
-		 background-color: display none;
-	     }
-
-	     #MOBILE_NAV{
-		 display: block;
-		 padding-bottom: 0em;
-	     }
-
-	     #MOBILE_NAV #LOGO{
-		 margin: 0 auto;
-		 width: 150px;
-		 position: relative;
-		 bottom: 1em;
-	     }
-
-	     #MOBILE_NAV a{
-		 color: #386988;
-	     }
-	     .dropdown-toggle{
-		 font-size: 1.5em;
-		 color: #FFFFFF !important;
-	     }
-	     
+	 
+	 @media only screen and (max-width: 600px){
 	     #COVER{
 		 background-image: url("img/cover.jpg");
-		 height: 30vh;
+		 height: 60vh;
 		 background-attachment: scroll;
 		 background-size: 100%;
 		 background-repeat: no-repeat;
@@ -135,11 +123,11 @@
 		 margin-bottom: 0;
 	     }
 	     #COVER h2{
-		 display: none;
+		 font-size: 2em;
 	     }
 
 	     #COVER h4{
-		 font-size: 2em;
+		 font-size: 1em;
 		 font-family: 'Anton-Regular';
 	     }
 
@@ -168,6 +156,53 @@
 		 text-shadow: 1px 1px 1px #FFFFFF;
 	     }
 
+	 }
+	 @media only screen and (max-width: 680px){
+	     #DESTOP_NAV{
+		 display: none !important;
+		 background-color: display none;
+	     }
+
+	     #MOBILE_NAV{
+		 display: block;
+		 padding-bottom: 0em;
+	     }
+
+	     #MOBILE_NAV #LOGO{
+		 margin: 0 auto;
+		 width: 150px;
+		 position: relative;
+		 bottom: 1em;
+	     }
+
+	     #MOBILE_NAV a{
+		 color: #386988;
+	     }
+	     .dropdown-toggle{
+		 font-size: 1.5em;
+		 color: #FFFFFF !important;
+	     }
+
+	     .writingSkillsBtn{
+		 background-color: #386988;
+		 color: #FFFFFF !important;
+		 border-color: #FFFFFF;
+	     }
+	     
+	     
+	 }
+	 
+	 #NEWSLETTER{
+	     background-color: #386988;
+	     color: #ffffff;
+	 }
+
+	 #NEWSLETTER button{
+	     background-color: #FFFFFF;
+	     border-color: #386988;
+	     color: #386988;
+	     
+	 }	 
 	</style>
     </head>
     <body>
@@ -183,6 +218,7 @@
 	    <section class="navbar-section">
 		<a href="#SERVICES" class="btn btn-link">Services</a>
 		<a href="#CONTACT" class="btn btn-link">Contact</a>
+		<a href="writing-skills.html" class="writingSkillsBtn btn">Writing Skills</a>
 	    </section>
 	</header>
 	<header class="navbar" id="MOBILE_NAV">
@@ -196,6 +232,7 @@
 		    <li><a href="#VALUES" class="btn btn-link">Values</a></li>
 		    <li><a href="#SERVICES" class="btn btn-link">Services</a></li>
 		    <li><a href="#CONTACT" class="btn btn-link">Contact</a></li>
+		    <li><a href="writing-skills.html" class="writingSkillsBtn btn">Writing Skills</a></li>
 		</ul>
 	    </div>
 	    <section class="navbar-center">
@@ -204,7 +241,7 @@
 	</header>
 	<section id="COVER">
 	    <h2>Global Links & Consultants</h2>
-	    <h4>KNOWLEDGE IS OUR PASSION</h4>
+	    <h4>cc/ 2002/1895</h4>
 	</section>
 	<section class="sections" id="VISION">
 	    <h2 class="sectionHeads">Vision</h2>
@@ -222,7 +259,7 @@
 		economy powered by information and knowledge and
 		enabled by ICT. We enhance the skills and knowledge
 		of individuals, organisations and communities in a
-		manner that sustains operations.
+		manner that sustains our operations.
 	    </p>
 	</section>
 	<section class="sections" id="VALUES">
@@ -287,7 +324,7 @@
 			    <img src="img/culture.png" class="img-responsive services-icons">
 			</div>
 			<div class="card-header">
-			    <div class="card-title h5">Developing Organisation</div>
+			    <div class="card-title h5">Developing Organisations</div>
 			</div>
 		    </div>
 		    <div class="card col-3 col-sm-12 text-center">
@@ -295,7 +332,7 @@
 			    <img src="img/financial-advisor.png" class="img-responsive services-icons">
 			</div>
 			<div class="card-header">
-			    <div class="card-title h5">Conducting Financial Analysis & Planning</div>
+			    <div class="card-title h5">Conducting Financial Planning & Analysis</div>
 			</div>
 		    </div>
 		    <div class="card col-3 col-sm-12 text-center">
@@ -345,8 +382,7 @@
 	    </div>
 	    <br><br>
 	    <h3 class="text-center">
-		Radically rethinking and reinventing work design for
-		the future
+		Rethinking and reinventing work and organisations for the 21st century and beyond.
 	    </h3>
 	</section>
 	<section class="sections" id="CONTACT">
@@ -373,6 +409,13 @@
 		<li><i class="icon icon-mail"></i> P.O. Box 86937, Windhoek Namibia</li>
 		<li><i class="icon icon-message"></i> glinks232@gmail.com</li>
 	    </ul>
+	</section>
+	<section class="sections" id="NEWSLETTER">
+	    <h2 class="sectionHeads">Subscribe To Our Newsletter</h2>
+	    <div class="input-group col-6 col-sm-12">
+		<input type="text" class="form-input" placeholder="Email Address">
+		<button class="btn btn-primary input-group-btn">Subcribe</button>
+	    </div>
 	</section>
 	<script src="index.js"></script>
     </body>

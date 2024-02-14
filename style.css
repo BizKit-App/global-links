@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'Anton-Regular';
+    src: URL('fonts/Anton-Regular.ttf') format('truetype');
+}
+
+#LOGO{
+    width: 180px;
+}
+.navbar{
+    background-color: #386988;
+    border-bottom: thick solid #386988;
+    padding: .5em;
+}
+.navbar-section a{
+    color: #FFFFFF !important;
+}
+
+
+.writingSkillsBtn{
+    background-color: #386988 !important;
+    color: #386988 !important;
+    border-color: #FFFFFF !important;
+}
+
+.writingSkillsBtn:hover,
+.writingSkillsBtn:active,
+.writingSkillsBtn:focus{
+    color: #386988 !important;
+    background-color: #FFFFFF !important;
+    border-color: #386988 !important;
+}
+
+#MOBILE_NAV{
+    display: none;
+}
+
+@media only screen and (max-width: 680px){
+    #DESTOP_NAV{
+	display: none !important;
+	background-color: display none;
+    }
+
+    #MOBILE_NAV{
+	display: block;
+	padding-bottom: 0em;
+    }
+
+    #MOBILE_NAV #LOGO{
+	margin: 0 auto;
+	width: 150px;
+	position: relative;
+	bottom: 1em;
+    }
+
+    #MOBILE_NAV a{
+	color: #386988;
+    }
+    .dropdown-toggle{
+	font-size: 1.5em;
+	color: #FFFFFF !important;
+    }
+
+    .writingSkillsBtn{
+	background-color: #386988;
+	color: #FFFFFF !important;
+	border-color: #FFFFFF;
+    }
+
+
+}
+
+.sectionHeads{
+	     font-family: 'Anton-Regular';
+	     font-size: 3em;
+	 }
+
+	 .sections{
+	     padding: 4em;
+	 }
+
+.sections p{
+    font-size: 2em;
+}

@@ -4,7 +4,7 @@
 }
 
 #LOGO{
-    width: 180px;
+    width: 300px;
 }
 .navbar{
     background-color: #386988;
@@ -70,14 +70,18 @@
 }
 
 .sectionHeads{
-	     font-family: 'Anton-Regular';
-	     font-size: 3em;
-	 }
+    font-family: 'Anton-Regular';
+    font-size: 2em;
+}
 
-	 .sections{
-	     padding: 4em;
-	 }
+.sections{
+    padding: 1em;
+}
 
 .sections p{
     font-size: 2em;
+}
+
+.sectionHeadsSmall{
+    font-size: 1.4em;
 }

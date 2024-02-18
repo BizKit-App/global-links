@@ -1,7 +1,7 @@
 
-            Fonts used: Bellfort,Lato-Italic 
+            Fonts used: Lato-Bold,CallunaSans-Italic 
 
-            Colors used: 0E67B4,F7F3E8  
+            Colors used: F2EEE4,5065A8  
 
             Icon url: https://thenounproject.com/term/global/1718331  
         

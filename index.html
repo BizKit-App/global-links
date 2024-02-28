@@ -29,7 +29,7 @@
 	     color: #FFFFFF;
 	     text-shadow: 1px 1px 1px #386988;
 	 }
-	
+
 	 #VALUES{
 	     background-color: #386988;
 	     color: #FFFFFF;
@@ -121,7 +121,13 @@
 		 text-shadow: 1px 1px 1px #FFFFFF;
 	     }
 
-	 }	 
+	 }
+
+	 @media only screen and (max-width: 600px){
+	     #COVER{
+		 height: 40vh;
+	     }
+	 }
 	</style>
     </head>
     <body>
@@ -280,7 +286,7 @@
 			    <img src="img/evaluation.png" class="img-responsive services-icons">
 			</div>
 			<div class="card-header">
-			    <div class="card-title h5">Assesing Business Risk</div>
+			    <div class="card-title h5">Assessing Business Risk</div>
 			</div>
 		    </div>
 		    <div class="card col-3 col-sm-12 col-mx-auto text-center">
@@ -319,16 +325,16 @@
 	    <div class="columns">
 		<div class="form-group col-6 col-sm-12">
 		    <label class="form-label" for="input-example-1">Name</label>
-		    <input class="form-input" type="text" id="input-example-1" placeholder="Name">
+		    <input class="form-input" type="text" placeholder="Name" id="CONTACT_US_NAME_INPUT">
 
 		    <label class="form-label" for="input-example-1">Email Address</label>
-		    <input class="form-input" type="text" id="input-example-1" placeholder="Email Address">
+		    <input class="form-input" type="text" placeholder="Email Address" id="CONTACT_US_EMAIL_INPUT">
 
 		    
 		    <label class="form-label" for="input-example-3">Message</label>
-		    <textarea class="form-input" id="input-example-3" placeholder="Message" rows="3"></textarea>
+		    <textarea class="form-input" placeholder="Message" rows="3" id="CONTACT_US_MESSAGE_INPUT"></textarea>
 		    <br>
-		    <button class="btn btn-primary btn-lg">Send Message</button>
+		    <button class="btn btn-primary btn-lg" id="CONTACT_US_BTN">Send Message</button>
 		</div>
 	    </div>
 	    <br>
@@ -341,11 +347,64 @@
 	</section>
 	<section class="sections" id="NEWSLETTER">
 	    <h3 class="sectionHeads sectionHeadsSmall">Subscribe to our newsletter</h4>
-	    <div class="input-group col-6 col-sm-12">
-		<input type="text" class="form-input" placeholder="Email Address">
-		<button class="btn btn-primary input-group-btn">Subcribe</button>
-	    </div>
+		<div class="input-group col-6 col-sm-12">
+		    <input type="text" class="form-input" placeholder="Email Address" id="SUBSCRIBER_EMAIL_INPUT">
+		    <button class="btn btn-primary input-group-btn" id="SUBSCRIBE_BTN">Subcribe</button>
+		</div>
 	</section>
-	<script src="index.js"></script>
+
+	<div class="modal" id="STATUSBOX">
+	    <a href="#close" class="modal-overlay" aria-label="Close"></a>
+	    <div class="modal-container">
+		<div class="modal-header">
+		    <a href="#close" class="btn btn-clear float-right" aria-label="Close" id="CLOSE_STATUSBOX"></a>
+		    <div class="modal-title h5" id="STATUS_TITLE">Modal title</div>
+		</div>
+		<div class="modal-body">
+		    <div class="content" id="STATUSBOX_CONTENT">
+			<!-- content here -->
+		    </div>
+		</div>
+	    </div>
+	</div>
+
+	<script src="js/kong.js"></script>
+	<script>
+	 document.getElementById("CONTACT_US_BTN").addEventListener("click", async ()=>{
+	     var contactUsNameInput = document.getElementById("CONTACT_US_NAME_INPUT");
+	     var contactUsEmailInput = document.getElementById("CONTACT_US_EMAIL_INPUT");
+	     var contactUsMessageInput = document.getElementById("CONTACT_US_MESSAGE_INPUT");
+
+	     document.getElementById("STATUSBOX_CONTENT").innerHTML = "";
+	     document.getElementById("STATUSBOX").classList.add("active");
+	     document.getElementById("STATUS_TITLE").innerHTML = "📨 Sending message"
+	     try {
+		 var input = new KongContactMessageInput(contactUsNameInput.value, contactUsEmailInput.value, contactUsMessageInput.value)
+		 await KongContactMessageAPI.send_message(input);
+		 document.getElementById("STATUSBOX_CONTENT").innerHTML = "✅ Message successfully sent!";
+	     } catch(err){
+		 document.getElementById("STATUSBOX_CONTENT").innerHTML = "⚠️ "+ err;
+	     }
+	 })
+
+	 document.getElementById("SUBSCRIBE_BTN").addEventListener("click", async() => {
+	     var subscriberEmail = document.getElementById("SUBSCRIBER_EMAIL_INPUT");
+
+	     document.getElementById("STATUSBOX_CONTENT").innerHTML = "";
+	     document.getElementById("STATUSBOX").classList.add("active");
+	     document.getElementById("STATUS_TITLE").innerHTML = "📰 Subscribing to  newsletter"
+	     try {
+		 var input = new KongNewsletterSubcriberInput(subscriberEmail.value);
+		 await KongNewsletterAPI.subscribe(input);
+		 document.getElementById("STATUSBOX_CONTENT").innerHTML = "✅ Successfully subcribed to newsletter!";
+	     } catch(err){
+		 document.getElementById("STATUSBOX_CONTENT").innerHTML = "⚠️ "+ err;
+	     }
+	 })
+
+	 document.getElementById("CLOSE_STATUSBOX").addEventListener("click", async()=>{
+	     document.getElementById("STATUSBOX").classList.remove("active");
+	 })
+	</script>
     </body>
 </html>

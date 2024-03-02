@@ -64,11 +64,16 @@
 	border-color: #FFFFFF;
     }
 
+    .sections{
+	padding: 0em;
+	margin: 0em;
+    }
+
 }
 
 .sectionHeads{
     font-family: 'Anton-Regular';
-    font-size: 2em;
+    font-size: 1.3em;
 }
 
 .sections{
@@ -76,7 +81,7 @@
 }
 
 .sections p{
-    font-size: 2em;
+    font-size: 1.3em;
 }
 
 .sectionHeadsSmall{

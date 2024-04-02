@@ -18,9 +18,10 @@
 	     padding: 6em 4em;
 	 }
 
-	 #COVER h2{
+	 #COVER h3{
 	     color: #FFFFFF;
-	     font-size: 5em;
+	     font-size: 3em;
+	     text-align: right;
 	     font-family: 'Anton-Regular';
 	     text-shadow: 1px 1px 1px #386988;
 	 }
@@ -85,12 +86,14 @@
 		 background-repeat: no-repeat;
 		 padding: 2em;
 		 padding-bottom: 0;
+		 padding-left: 1em;
 		 margin-bottom: 0;
 	     }
-	     #COVER h2{
-		 font-size: 2em;
+	     #COVER h3{
+		 font-size: 1.5em;
+		 text-align: left;
 	     }
-
+         
 	     #COVER h4{
 		 font-size: 1em;
 		 font-family: 'Anton-Regular';
@@ -100,6 +103,10 @@
 		 font-family: 'Anton-Regular';
 		 font-size: 1.3em;
 	     }
+        
+        #Vision, #Mission{
+        	padding: 0;
+        }
 
 	     .sections{
 		 padding: 1 2em 2em 0em;
@@ -128,13 +135,49 @@
 		 height: 40vh;
 	     }
 	 }
+
+	@media only screen and (max-width: 471px){
+	     #COVER{
+		   height: 20vh;
+	     }
+	 }
+
+	 @media only screen and (max-width: 236px){
+	     #COVER{
+		   height: 10vh;
+	     }
+	    #COVER h3{
+	     display: none;
+	     }
+
+	 }
+
+	@media only screen and (max-width: 280px){
+	    #COVER h3{
+	     display: none;
+	     }
+
+	 }
+
+    #VISION{
+    	padding-bottom: 0 !important;
+    }
+
+    #VISION p{
+    	margin-bottom: .8em !important;
+    }
+
+	 #MISSION{
+	 	padding-top: 0!important;
+	 	margin-top: 0!important;
+	 }
 	</style>
     </head>
     <body>
 	<header class="navbar" id="DESTOP_NAV">
 	    <section class="navbar-section">
 		<a href="index.html" class="btn btn-link">Home</a>
-		<a href="about.html" class="btn btn-link">About Us</a>
+		<a href="about.html" class="btn btn-link">CEO</a>
 		<a href="#VISION" class="btn btn-link">Vision</a>
 		<a href="#MISSION" class="btn btn-link">Mission</a>
 		<a href="#VALUES" class="btn btn-link">Values</a>
@@ -164,7 +207,7 @@
 		</a>
 		<ul class="menu">
 		    <a href="index.html" class="btn btn-link">Home</a>
-		    <li><a href="about.html" class="btn btn-link">About Us</a></li>
+		    <li><a href="about.html" class="btn btn-link">CEO</a></li>
 		    <li><a href="#VISION" class="btn btn-link">Vision</a></li>
 		    <li><a href="#MISSION" class="btn btn-link">Mission</a></li>
 		    <li><a href="#VALUES" class="btn btn-link">Values</a></li>
@@ -179,7 +222,7 @@
 	    </section>
 	</header>
 	<section id="COVER">
-
+     <h3 class="BANNER">Rethinking and Reinventing <br> work and organisations <br>for the 21st century...</h3>
 	</section>
 	<section class="sections" id="VISION">
 	    <h2 class="sectionHeads">Vision</h2>

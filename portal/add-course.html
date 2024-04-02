@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Add Course</title>
+    
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+
+    <link rel='stylesheet' href='./css/vendor/spectre.min.css'>
+    <link rel='stylesheet' href='./css/vendor/spectre-exp.min.css'>
+    <link rel='stylesheet' href='./css/vendor/spectre-icons.min.css'>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='./css/main.css'>
+  </head>
+  <body>
+    <header class="navbar" id="NAV">
+    <section class="navbar-section">
+	<a href="#" class="btn btn-link" tabindex="0">
+	    <i class="icon icon-emoji"></i>
+	</a>
+    </section>
+    <section class="navbar-section">
+
+	<div class="dropdown">
+	    <a href="#" class="btn btn-link dropdown-toggle" tabindex="0">
+		<i class="icon icon-menu"></i>
+	    </a>
+	    <!-- menu component -->
+	    <ul class="menu">
+		No messages
+	    </ul>
+	</div>
+    </section>
+</header>
+
+    <div class='col-6 col-mx-auto pt-2 kontainer'>
+      <h3 class='pt-2'><i class='fa fa-book'></i> Add a new Course</h3>
+      <div class="form-group">
+    <label class="form-label" for="input-example-1">Name</label>
+    <input class="form-input" type="text" id="NAME" placeholder="Course name">
+</div>
+
+<div class="form-group">
+    <label class="form-label" for="input-example-1">Description</label>
+    <textarea class="form-input" id="DESCRIPTION" placeholder="Describe this course" rows="3"></textarea>
+</div>
+
+<!-- <div class="form-group">
+    <label class="form-label" for="input-example-1">Topics <span class="text-gray">(Optional)</span></label>
+    <input class="form-input" type="text" id="Course topics (seperate the with commas)" placeholder="Blog post overview">
+</div> -->
+
+<!-- <div class="form-group">
+    <label class="form-label" for="input-example-1">Goals <span class="text-gray">(Optional)</span></label>
+    <input class="form-input" type="text" id="GOALS" placeholder="Course goals">
+</div> -->
+
+<!-- <div class="form-group">
+    <label class="form-label" for="input-example-1">Textbooks <span class="text-gray">(Optional)</span></label>
+    <input class="form-input" type="text" id="TEXTBOOKS" placeholder="Course textbooks (seperate them with commas)">
+</div> -->
+
+<!-- <div class="form-group">
+    <label class="form-label" for="input-example-1">Grading <span class="text-gray">(Optional)</span></label>
+    <textarea class="form-input" id="GRADING" placeholder="Describe how the course is graded" rows="3"></textarea>
+</div> -->
+
+<div class="form-group">
+    <label class="form-label" for="input-example-1">Price <span class="text-gray">(Optional)</span></label>
+    <input class="form-input" type="text" id="PRICE" placeholder="How much does this course cost">
+</div>
+
+<div class="form-group">
+    <label class="form-label" for="input-example-1">Duration <span class="text-gray">(Optional)</span></label>
+    <input class="form-input" type="text" id="DURATION" placeholder="Describe the duration of the course (1 month, 2 years etc)">
+</div>
+
+<div class="form-group">
+    <label class="form-label" for="input-example-1">Code</label>
+        <input class="form-input" type="text" id="CODE" placeholder="Code or accronym of the course (cs)">
+</div>
+
+<div class="form-group pt-2">
+    <button class="btn btn-primary btn-lg" id="POST_BLOG_BTN">Submit</button>
+</div>
+
+    </div>
+    <div id="INFO_BOX" class="toast"></div>
+
+    <script src='/portal/js/api/course.js'></script>
+    <script src='/portal/js/info-box.js'></script>
+    <script src='/portal/js/add-course.js'></script>
+  </body>
+</html>

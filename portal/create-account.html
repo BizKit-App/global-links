@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+
+    <title>Create Account</title>
+    <link rel='stylesheet' href='./css/vendor/spectre.min.css'>
+    <link rel='stylesheet' href='./css/vendor/spectre-exp.min.css'>
+    <link rel='stylesheet' href='./css/vendor/spectre-icons.min.css'>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='./css/main.css'>
+  </head>
+  <body>    
+    <header class="navbar" id="NAV">
+    <section class="navbar-section">
+	<a href="#" class="navbar-brand mr-2 text-bold text-italic">G-links Portal</a>
+    </section>
+</header>
+
+    <div class='col-6 col-mx-auto pt-2 kontainer'>
+      <h3 class='pt-2'><i class='fa fa-user'></i>  Create Account</h3>
+      <div class="form-group">
+    <label class="form-label" for="input-example-1">Username</label>
+    <input class="form-input" type="text" id="USERNAME" placeholder="Username">
+</div>
+
+<div class="form-group">
+    <label class="form-label" for="input-example-1">Email</label>
+    <input class="form-input" type="text" id="EMAIL" placeholder="Email">
+</div>
+
+<div class="form-group">
+    <label class="form-label" for="input-example-1">Password</label>
+    <input class="form-input" type="text" id="PASSWORD" placeholder="Password">
+</div>
+
+<div class="form-group">
+    <label class="form-label" for="input-example-1">Repeat Password</label>
+    <input class="form-input" type="text" id="REAPEATED_PASSWORD" placeholder="Repeat Password">
+</div>
+
+<div class="form-group pt-2">
+    <button class="btn btn-primary btn-lg" id="CREATE_ACCOUNT_BTN">Submit</button>
+</div>
+
+    </div>
+    <div id="INFO_BOX" class="toast"></div>
+
+    <script src='/js/kong.js'></script>
+    <script src='/portal/js/info-box.js'></script>
+    <script src='/portal/js/create-account.js'></script>
+  </body>
+</html>
